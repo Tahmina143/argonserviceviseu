@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/936/936831.png" type="image/png"> 
     <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/style.css">
@@ -109,20 +110,26 @@
     <section id="connection">
         <div class="connection">
             <h2 class="connection__h2" >DEIXE UM PEDIDO</h2> 
-            <form  id="connection" enctype="multipart/form-data" action="mail.php" method="POST">
-                <div class="connection__container">
-                <input type="text" placeholder="Nome" name="name" class="connection__form1" minlength="2" maxlength="30" required pattern="[a-zA-Z]+$">
-                <input type="tel" maxlength="12" name="tel" placeholder="Número de telefone" class="connection__form2" required pattern="[ 0-9]+$">
-                <input type="email" placeholder="E-mail" name="email" class="connection__form3">
-                <input type="textarea" placeholder="Digite sua mensagem" name="comment" class="connection__form4" required>
-                <div class="connection__container2">
-                    <input type="submit" value="MANDAR" class="connection__button">
-                    <input type="checkbox" required value="true" class="connection__checkbox">
-                    <p class="connection__checkboxtext">Concordo com o uso dos meus Dados Pessoais</p>
+            <form action="https://send.pageclip.co/6xgHdstNR4NrtovqbQs8BxO4JaR1GP2y" class="pageclip-form" method="post">
+                 <div class="connection__container">
+                        <!-- <input type="text" name="name" required />
+                        <input type="email" name="email" required /> -->
+                        <input type="text" placeholder="Nome" name="name" class="connection__form1" minlength="2"
+                            maxlength="30" required pattern="[a-zA-Z]+$">
+                        <input type="tel" maxlength="12" name="tel" placeholder="Número de telefone"
+                            class="connection__form2" required pattern="[ 0-9]+$">
+                        <input type="email" placeholder="E-mail" name="email" class="connection__form3">
+                        <input type="textarea" placeholder="Digite sua mensagem" name="comment"
+                            class="connection__form4" required>
+                        <div class="connection__container2">
+                            <button type="submit" value="Send" class="connection__button pageclip-form__submit">
+                                <span>MANDAR</span>
+                            </button>
+                            <input type="checkbox" required value="true" class="connection__checkbox">
+                            <p class="connection__checkboxtext">Concordo com o uso dos meus Dados Pessoais</p>
+                        </div>
+                        <img src="./assets/image/connection/form.png" alt="logotipo" class="connection__formimage">
                 </div>
-                <img src="./assets/image/connection/form.png" alt="logotipo" class="connection__formimage">
-                </div>
-               
             </form>
             <div class="popup">
               <div class="popup__container">
